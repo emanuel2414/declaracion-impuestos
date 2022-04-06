@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+	<link rel="shortcut icon" href="../img/img_consultar.png">
+	<title>Consultas</title>
+</head>
+<body>
+	<header>
+		<div class="contenido_titulo">
+			<h1>Consultas</h1>
+		</div>
+		<div class="contenido_menu">
+			<ul>
+				<li><a href="consultar_registros.html">Inicio</a></li>
+				<li><a href="registrar_ingresos.html">Ingresos</a></li>
+				<li><a href="registrar_gastos.html">Gastos</a></li>
+				<li><a href="#">Desarrolladores</a>
+					<div class="contenedor-desarrolladores">
+						<p>EMANUEL BARBOSA LABRADA</p>
+						<p>YWRANI BARBOSA LABRADA</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section>
+		<div class="contenedor">
+			<div class="contenedor_img">
+				<img src="../img/img_consulta.jpg">
+			</div>
+			<div class="contenedor_formulario">
+				<img class="img_consulta" src="../img/img_consultar.png">
+				<h2 class="titulo_consulta">Consultar</h2>
+				<form action="../php/insercion_consultar.php" method="post">
+					<input class="registro" type="date" name="fecha">
+					<button class="registrar" type="submit">
+						<span id="span1"></span>
+						<span id="span2"></span>
+						<span id="span3"></span>
+						<span id="span4"></span>
+						Consultar
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+	<link rel="shortcut icon" href="../img/img_registro_ingresos.png">
+	<title>Registro Gastos</title>
+</head>
+<body>
+	<header>
+		<div class="contenido_titulo">
+			<h1>Registro Gastos</h1>
+		</div>
+		<div class="contenido_menu">
+			<ul>
+				<li><a href="registrar_gastos.html">Inicio</a></li>
+				<li><a href="registrar_ingresos.html">Ingresos</a></li>
+				<li><a href="consultar_registros.html">Consultar Registros</a></li>
+				<li><a href="#">Desarrolladores</a>
+					<div class="contenedor-desarrolladores">
+						<p>EMANUEL BARBOSA LABRADA</p>
+						<p>YWRANI BARBOSA LABRADA</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section>
+		<div class="contenedor">
+			<div class="contenedor_img">
+				<img src="../img/img_gastos.jpg">
+			</div>
+			<div class="contenedor_formulario">
+				<img src="../img/img_registro_ingresos.png">
+				<h2>Gastos</h2>
+				<form action="../php/insercion_gastos.php" method="post">
+					<input class="registro" type="number" name="cedula" placeholder="Cédula" required>
+					<input class="registro" type="date" name="fecha">
+					<input class="registro" type="text" name="nombre_gasto" placeholder="Nombre del gasto">
+					<input class="registro" type="text" name="descripcion_gasto" placeholder="Descripción del gasto">
+					<input class="registro" type="number" name="valor_gastos" placeholder="Valor de gastos">
+					<button class="registrar" type="submit">
+						<span id="span1"></span>
+						<span id="span2"></span>
+						<span id="span3"></span>
+						<span id="span4"></span>
+						Registrar
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
